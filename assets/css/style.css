@@ -1,0 +1,277 @@
+@font-face {
+    src: url("./../font/gothamhtf-book-webfont.ttf");
+    font-family: Gotham-Normal;
+}
+
+@font-face {
+    src: url("./../font/gothamhtf-bold-webfont.ttf");
+    font-family: Gotham-Bold;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: Gotham-Normal;
+}
+
+.homepage__intro {
+    position: relative;
+    line-height: 0;
+}
+
+.homepage__intro__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 50px;
+    background: rgba(255,255,255,.4);
+    line-height: 1;
+}
+
+.homepage__intro__img {
+    width: 100%;
+}
+
+.homepage__intro__text {
+    font-family: Gotham-Bold;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 60px);
+    transform: translateY(-50%);
+    margin: auto;
+    font-size: 7rem;
+    letter-spacing: .7rem;
+}
+
+.homepage__intro__menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.homepage__intro__item {
+    font-size: 1.4rem;
+    font-weight: bold;
+    list-style-type: none;
+    letter-spacing: .3rem;
+}
+
+.homepage__intro__item a {
+    text-decoration: none;
+    color: black;
+}
+
+.homepage__intro__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.homepage__category {
+    display: flex;
+}
+
+.homepage__category__item {
+    flex: 1;
+    position: relative;
+}
+
+.homepage__category__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.homepage__category__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homepage__category__text {
+    font-family: Gotham-Bold;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.homepage__category__sub-text {
+    font-family: Gotham-Bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.homepage__tag {
+    padding-top: 3rem;
+    padding-bottom: 2.7rem;
+}
+
+.homepage__tag__text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.homepage__photo {
+    display: flex;
+}
+
+.homepage__photo__item {
+    flex: 1;
+}
+
+.homepage__photo__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.homepage__service {
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.homepage__subscribe {
+    flex: 1;
+}
+
+.homepage__subscribe__text {
+    font-family: Gotham-Bold;
+    margin-bottom: 1.1rem;
+    font-size: 1.7rem;
+}
+
+.homepage__subscribe__input {
+    max-width: 85%;
+    width: 49rem;
+    height: 4.6rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    border-color: black;
+}
+
+.homepage__subscribe__button {
+    height: 5.2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border: none;
+    vertical-align: top;
+}
+
+.homepage__customer-care {
+    flex: 1;
+}
+
+.homepage__customer-care__container {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.homepage__customer-care__title {
+    font-family: Gotham-Bold;
+    margin-bottom: 1.3rem;
+    font-size: 1.7rem;
+}
+
+.homepage__customer-care__item {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.homepage__customer-care__item:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.footer {
+    padding-top: 6.8rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+}
+
+.footer__item {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.footer__item:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+@media all and (max-width: 1024px) {
+    .homepage__intro__content {
+        padding: 0 15px;
+    }
+
+    .homepage__intro__text {
+        font-size: 2.2rem;
+        top: calc(50% - 10px);
+        letter-spacing: .2rem;
+    }
+
+    .homepage__intro__item {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+
+    .homepage__intro__item:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    .homepage__category__text {
+        font-size: 2rem;
+    }
+
+    .homepage__category__sub-text {
+        font-size: 1.3rem;
+    }
+
+    .homepage__service {
+        display: block;
+    }
+
+    .homepage__subscribe {
+        text-align: center;
+    }
+
+    .homepage__subscribe__input {
+        max-width: 70%;
+    }
+
+    .homepage__subscribe__icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .homepage__customer-care__container {
+        width: auto;
+        text-align: center;;
+    }
+
+    .footer__item {
+        display: block;
+        border-right: none !important;
+    }
+
+    .footer__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
